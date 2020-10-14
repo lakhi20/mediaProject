@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>media entertainment </title>
+
+  <script src="https://use.fontawesome.com/208f5f49ae.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style0.css">
+</head>
+
+
+<body>
+  <header>
+    <div class=navbar>
+      <ul>
+        <li> <a href="index.html" class="link">
+            <div > <img class="logo" src="images/head1.jpg" alt="media"> </div>
+          </a></li>
+        <li><a href="#" class="nav-text">MOVIES</a></li>
+        <li><a href="#" class="nav-text">TV SERIES</a></li>
+        <li><a href="#" class="nav-text">AUDIO</a></li>
+      </ul>
+
+    </div>
+  </header>
+  <div class="slide-container">
+    <div class="slides " style="display: block;">
+      <img src="/images/slide1.jpg" alt="img" style="height:50%;">
+    </div>
+    <div class="slides " style="display:none;">
+      <img src="/images/slide4.jpg" alt="img" style="height: 50%; ">
+    </div>
+    <div class="slides " style="display:none;">
+      <img src="/images/slide5.jpg" alt="img" style="height: 50%;">
+    </div>
+    <div class="slides " style="display:none;">
+      <img src="/images/slide7.jpg" alt="img" style="height: 50%;">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn"><span id="genreText">Genre</span><i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a onclick="filterSelection('All')">All</a>
+            <a onclick="filterSelection('action')">Action</a>
+            <a onclick="filterSelection('drama')">Drama</a>
+            <a onclick="filterSelection('scifi')">Sci-Fi</a>
+          </div>
+          
+
+  </div>
+
+  <div class="search-container">
+    <form onsubmit="javascript:return false;">
+      <input type="text" id="filterInput" placeholder="Search your favourite movie title" name="search" oninput="searchname()">
+
+      <div class="search-container-button">
+        <button type="submit" onclick="searchname()"> <i class="fa fa-search"></i> </button>
+      </div>
+
+    </form>
+  </div>
+
+
+  <div class=image-holder-container>
+    <div class="media scifi">
+      <img src="images/scifi1.jpg" alt="img" width="200" height="200">
+      <div class="overlay "><b class="title">AVATAR</b><br>A SCIFI MOVIE</div>
+    </div>
+    
+      <div class="media scifi">
+        <img src="images/scifi1.jpg" alt="img" width="200" height="200">
+        <div class="overlay "><b class="title">AVATAR</b><br>A SCIFI MOVIE</div>
+      </div>
+      <div class="media scifi">
+        <img src="images/scifi2.jpg" alt="img" width="200" height="200">
+        <div class="overlay "><b class="title">WARCRAFT</b><br>A SCIFI MOVIE</div>
+      </div>
+      <div class="media scifi">
+        <img src="images/scifi7.jpg" alt="img" width="200" height="200">
+        <div class="overlay "><b class="title" >AVENGERS</b><br> SUPER HERO TEAM.</div>
+      </div>
+      <div class="media scifi">
+        <img src="images/scifi4.jpg" alt="img" width="200" height="200">
+        <div class="overlay "><b class="title">WONDERWOMEN</b><br> A SUPER HERO</div>
+      </div>
+      <div class="media scifi">
+        <img src="images/scifi9.jpg" alt="img" width="200" height="200">
+        <div class="overlay "><b class="title">G-FORCE</b><br>A CARTOON HERO</div>
+      </div>
+      <div class="media scifi">
+        <img src="images/scifi6.jpg" alt="img" width="200" height="200">
+        <div class="overlay "><b class="title">BATMAN</b><br>A COMIC HERO</div>
+      </div>
+    </div>
+  
+  
+    <div class="media action">
+      <img src="images/action0.jpg" alt="img" width="200" height="200">
+      <div class="overlay"><b class="title">BAHUBALI</b><br>INDIAN ACTION MOVIE</div>
+    </div>
+    <div class="media action">
+      <img src="images/action2.jpg" alt="img" width="200" height="200">
+      <div class="overlay "><b class="title">WAR</b><br>INDIAN ACTION MOVIE</div>
+    </div>
+    <div class="media action">
+      <img src="images/action3.jpg" alt="img" width="200" height="200">
+      <div class="overlay "><b class="title">MATRIX</b><br>HOLLYWOOD ACTION</div>
+    </div>
+    <div class="media action">
+      <img src="images/action4.jpg" alt="img" width="200" height="200">
+      <div class="overlay "><b class="title">ZANZEER</b><br>INDIAN ACTION MOVIE</div>
+    </div>
+    <div class="media action">
+      <img src="images/action5.jpg" alt="img" width="200" height="200">
+      <div class="overlay "><b class="title">SAHOO</b><br>INDIAN ACTION MOVIE</div>
+    </div>
+    <div class="media action">
+      <img src="images/action6.jpg" alt="img" width="200" height="200">
+      <div class="overlay "><b class="title">ARTICLE 15</b><br>INDIAN ACTION MOVIE</div>
+    </div>
+  </div>
+  </div>
+  <div class="media action">
+    <img src="images/action6.jpg" alt="img" width="200" height="200">
+    <div class="overlay "><b class="title">ARTICLE 15</b><br>INDIAN ACTION MOVIE</div>
+  </div>
+  <div class="media action">
+    <img src="images/action6.jpg" alt="img" width="200" height="200">
+    <div class="overlay "><b class="title">ARTICLE 15</b><br>INDIAN ACTION MOVIE</div>
+  </div>
+  
+    <div class="media drama"> 
+      <img src="images/drama0.jpg" alt="img" width="200" height="200">
+      <div class="overlay "><b class="title">OMG</b><br>INDIAN DRAMA</div>
+    </div>
+    <div class="media drama">
+      <img src="images/drama2.jpg" alt="img" width="200" height="200">
+      <div class="overlay "><b class="title">JOCKER</b><br>HOLLYWOOD DRAMA</div>
+    </div>
+    <div class="media drama">
+      <img src="images/drama3.jpg" alt="img" width="200" height="200">
+      <div class="overlay "><b class="title">SHERLOCK</b><br>HOLLYWOOD DRAMA</div>
+    </div>
+    <div class="media drama">
+      <img src="images/drama4.jpg" alt="img" width="200" height="200">
+      <div class="overlay "><b class="title">WAKEUP SID</b><br>INDIAN DRAMA</div>
+    </div>
+    <div class="media drama">
+      <img src="images/drama5.jpg" alt="img" width="200" height="200">
+      <div class="overlay"><b class="title">ANGREGI MEDIUM</b><br>INDIAN DRAMA</div>
+    </div>
+    <div class="media drama">
+      <img src="images/drama6.jpg" alt="img" width="200" height="200">
+      <div class="overlay "><b class="title">QUEEN</b><br>INDIAN DRAMA</div>
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+    <div class="copyright">
+      <a class="links" href="index.html"><img class="logo" src="images/head1.jpg" alt=media></a>
+      <div class="text">Powered by media Entertainment Portal . All Rights Reserved.</div>
+    </div>
+
+  </footer>
+
+
+  <script type="text/javascript" src="projectjs/main.js"></script>
+</body>
+
+</html>
